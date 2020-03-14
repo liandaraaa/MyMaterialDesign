@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--    TODO 17: styling base theme-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:toolbarStyle">@style/Widget.Mystyle.Toolbar</item>
+        <item name="android:windowContentTransitions">true</item>
+
+<!--        Dark Icon Mode on Status Bar-->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+
+<!--        will style the text across all elements, including top app bar, and the icons in our top app bar.-->
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+    </style>
+
+    <style name="Widget.Mystyle.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextApperance.Mystyle.Toolbar</item>
+    </style>
+
+
+<!--    TODO 18: styling typography-->
+    <style name="TextApperance.Mystyle.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+<!--    Style TextFields-->
+
+    <style name="Widget.Mystyle.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.Mystyle.TextInputLayout.HintText</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="boxStrokeColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextAppearance.Mystyle.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+<!--    Style Button-->
+    <style name="Widget.Mystyle.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="backgroundTint">?attr/colorPrimaryDark</item>
+<!--        <item name="android:stateListAnimator" tools:ignore="NewApi">@animator/shr_</item>-->
+    </style>
+
+    <style name="Widget.Mystyle.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+<!--    Style Title-->
+    <style name="TextAppearance.Mystyle.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+<!--    TODO 19: Create Backdrop-->
+    <style name="Widget.Mystyle.Backdrop" parent="">
+        <item name="android:background">?attr/colorAccent</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<!--    TODO 7 Create drawer menu-->
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Setting" />
+    <item
+        android:id="@+id/loginFragment"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Login" />
+</menu>
